@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  flask_app:
+    build: ./ML_on_Docker
+    ports:
+      - "8000:8000"
+    network_mode: host
