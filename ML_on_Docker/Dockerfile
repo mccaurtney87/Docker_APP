@@ -3,7 +3,7 @@ MAINTAINER trishabh8@gmail.com
 
 RUN apt-get update -y
 RUN apt-get install python3-pip -y
-RUN apt-get install gunicorn3 -y
+RUN pip3 install gunicorn3 -y
 
 COPY requirements.txt requirements.txt
 COPY flask_app /opt/
