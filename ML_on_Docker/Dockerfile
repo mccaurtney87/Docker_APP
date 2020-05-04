@@ -1,9 +1,9 @@
-FROM centos:latest
+FROM ubuntu:latest
 MAINTAINER trishabh8@gmail.com
 
-RUN yum update -y
-RUN yum install python3-pip -y
-RUN yum install python-gunicorn3 -y
+RUN apt-get update -y
+RUN apt-get install python3-pip -y
+RUN apt-get install gunicorn3 -y
 
 COPY requirements.txt requirements.txt
 COPY flask_app /opt/
